@@ -9,9 +9,17 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
+
+:root{
+    --font-primary: "Baloo Da 2", sans-serif;
+    --font-secundary: "josefin slab", serif;
+    --font-action: "Mulish", sans-serif;
+}
+
 .burguer {
-    ackground-color: red;
     height: 2rem;
     width: 2rem;
     position: fixed;
@@ -113,5 +121,59 @@ header {
 }
 
 .sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top:0;
+    right: -20rem;
+}
 
+.sidebar.show-menu{
+    right: 0;
+}
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.menu-link {
+    font-family: var(--font-action);
+    font-size: 2rem;
+    color: #555;
+    transition: color 1s;
+}
+
+.menu-link:hover {
+    color: #6a3093;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i{
+    color: #555;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: color 1s;
+}
+
+.social-media i:hover{
+    color:#6a3093
 }
